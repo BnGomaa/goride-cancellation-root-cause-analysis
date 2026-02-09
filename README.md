@@ -1,67 +1,43 @@
-📉 Goride – Trip Cancellation & Operations Analysis
-📌 Project Overview
+# 🚖 Goride: Ride Cancellation & Revenue Loss Analysis
 
-This project analyzes trip cancellations at Goride to understand why trips are being canceled, who is responsible, and how cancellations impact revenue and customer retention.
+![Dashboard Preview](link-to-your-dashboard-screenshot.png) 
+*(Please replace this text with a screenshot of your dashboard)*
 
-The goal is to move beyond reporting metrics and provide actionable operational insights.
+## 📌 Project Overview
+**Goride**, a ride-booking platform, faced a critical operational challenge in 2024 with a high rate of unfulfilled trips. This project analyzes the root causes of trip cancellations, quantifies the **revenue leakage**, and assesses the impact on customer retention.
 
-❓ Business Problem
+The goal was to transform raw data into actionable insights to help the Operations and Finance teams reduce the **25% cancellation rate** and recover **~$17.3M in potential revenue**.
 
-Goride faces a 25% trip cancellation rate
+---
 
-High customer churn after cancellations
+## 💼 The Business Problem
+Management reported an increase in customer complaints and revenue loss but lacked visibility into the "Why".
+**Key Business Questions:**
+* Who is responsible for cancellations (Driver vs. Customer)?
+* What is the financial impact of unfulfilled demand?
+* How do waiting times (VTAT/CTAT) correlate with cancellations?
+* Does cancellation drive customer churn?
 
-Lack of clarity on:
+---
 
-Who cancels more (drivers vs customers)
+## 🔍 Key Insights & Findings
 
-Top cancellation reasons
+### 1. The "Driver" Bottleneck
+* [cite_start]**72%** of all cancellations are initiated by **Drivers**[cite: 150].
+* [cite_start]The top reason cited is *"Customer related issue/sick"*[cite: 141], suggesting a potential loophole in the cancellation policy being abused to avoid penalties.
 
-Operational factors (waiting times, vehicle type, region)
+### 2. Financial Impact (Revenue Leakage)
+* [cite_start]**Realized Revenue:** $47.3M from completed trips[cite: 220].
+* [cite_start]**Lost Revenue (Estimated):** ~$17.3M[cite: 222].
+* [cite_start]**Insight:** Fixing the cancellation issue presents a **36% revenue growth opportunity**[cite: 280].
 
-🛠 Tools & Technologies
+### 3. Customer Retention Crisis
+* The cancellation experience is fatal to loyalty.
+* [cite_start]**37,000 customers** stopped booking immediately after a cancellation event[cite: 269].
+* [cite_start]**Return Rate:** Negligible (<1.5% returned to book again)[cite: 270, 271].
 
-Excel (Data cleaning & Pivot Analysis)
+### 4. Operational Gaps
+* [cite_start]**Go XL** vehicle type suffers from the highest **Vehicle Time to Arrival (VTAT)** [cite: 174][cite_start], leading to higher cancellation rates in specific regions like *Pulbangash* and *Laxmi Nagar*[cite: 178, 179].
 
-Power BI (KPIs, Visuals, Dashboarding)
 
-Analytical Techniques
 
-Root Cause Analysis
-
-KPI Design
-
-Operational Performance Analysis
-
-📊 Key Metrics
-
-Total Trips: 150K
-
-Total Canceled Trips: 37.5K
-
-Cancellation Rate: 25%
-
-Driver-side Cancellations: 27K
-
-Customer-side Cancellations: 10.5K
-
-Revenue from Completed Trips: 47.3M
-
-🔍 Key Insights
-
-72% of cancellations are driver-related
-
-Long VTAT & CTAT significantly increase cancellation likelihood
-
-Certain vehicle types (GO XL, Premier Sedan) show higher waiting times
-
-Customer churn is severe:
-
-Returning customers after cancellation: 462
-
-Customers who stopped booking: 36,959
-
-💡 Conclusion
-
-Trip cancellations at Goride are primarily driven by operational inefficiencies, not customer behavior.
-Reducing waiting times and addressing driver-side issues would have the highest impact on revenue and customer retention.
