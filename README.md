@@ -1,43 +1,106 @@
-# 🚖 Goride: Ride Cancellation & Revenue Loss Analysis
+🚕 Goride – Trip Cancellation Root Cause Analysis
 
-![Dashboard Preview](link-to-your-dashboard-screenshot.png) 
-*(Please replace this text with a screenshot of your dashboard)*
+Operations & Business Analytics using Advanced Excel
 
-## 📌 Project Overview
-**Goride**, a ride-booking platform, faced a critical operational challenge in 2024 with a high rate of unfulfilled trips. This project analyzes the root causes of trip cancellations, quantifies the **revenue leakage**, and assesses the impact on customer retention.
+📌 Project Overview
 
-The goal was to transform raw data into actionable insights to help the Operations and Finance teams reduce the **25% cancellation rate** and recover **~$17.3M in potential revenue**.
+In 2024, Goride experienced a high trip cancellation rate that impacted revenue, customer retention, and operational efficiency.
 
----
+This project delivers a full Root Cause Analysis built entirely using Advanced Excel tools, transforming raw operational data into clear insights and business recommendations — without relying on Power BI.
 
-## 💼 The Business Problem
-Management reported an increase in customer complaints and revenue loss but lacked visibility into the "Why".
-**Key Business Questions:**
-* Who is responsible for cancellations (Driver vs. Customer)?
-* What is the financial impact of unfulfilled demand?
-* How do waiting times (VTAT/CTAT) correlate with cancellations?
-* Does cancellation drive customer churn?
+The focus of the project is not visualization only, but understanding why cancellations happen and how they affect the business.
 
----
+🛠️ Tools & Technologies Used
 
-## 🔍 Key Insights & Findings
+This project was built using Advanced Excel analytics stack:
 
-### 1. The "Driver" Bottleneck
-* [cite_start]**72%** of all cancellations are initiated by **Drivers**[cite: 150].
-* [cite_start]The top reason cited is *"Customer related issue/sick"*[cite: 141], suggesting a potential loophole in the cancellation policy being abused to avoid penalties.
+Excel
 
-### 2. Financial Impact (Revenue Leakage)
-* [cite_start]**Realized Revenue:** $47.3M from completed trips[cite: 220].
-* [cite_start]**Lost Revenue (Estimated):** ~$17.3M[cite: 222].
-* [cite_start]**Insight:** Fixing the cancellation issue presents a **36% revenue growth opportunity**[cite: 280].
+Power Query – Data cleaning, transformation, and modeling
 
-### 3. Customer Retention Crisis
-* The cancellation experience is fatal to loyalty.
-* [cite_start]**37,000 customers** stopped booking immediately after a cancellation event[cite: 269].
-* [cite_start]**Return Rate:** Negligible (<1.5% returned to book again)[cite: 270, 271].
+Power Pivot – Data model & relationships
 
-### 4. Operational Gaps
-* [cite_start]**Go XL** vehicle type suffers from the highest **Vehicle Time to Arrival (VTAT)** [cite: 174][cite_start], leading to higher cancellation rates in specific regions like *Pulbangash* and *Laxmi Nagar*[cite: 178, 179].
+DAX Measures – Business KPIs & calculations
 
+Pivot Tables – Exploratory analysis & insights extraction
 
+This setup simulates a lightweight BI environment fully inside Excel.
 
+🎯 Business Questions Answered
+
+The analysis answers key operational and business questions:
+
+What is the overall cancellation rate?
+
+How many trips were cancelled by drivers vs customers?
+
+What are the top reasons behind cancellations?
+
+How do waiting times (VTAT & CTAT) vary by vehicle type and region?
+
+What is the financial impact of cancellations?
+
+Which vehicle types and regions perform best and worst?
+
+Do customers return after cancellations, or churn permanently?
+
+📊 Dataset Summary
+
+Total Trips: 150K
+
+Cancelled Trips: 37.5K
+
+Cancellation Rate: 25%
+
+🔍 Key Insights
+1️⃣ Cancellation Ownership
+
+72% of cancellations are caused by drivers
+
+28% are caused by customers
+
+Top Reasons
+
+Driver-side:
+
+Customer-related issues
+
+Customer reported as sick / coughing
+
+Customer-side:
+
+Wrong address
+
+Change of plans
+
+2️⃣ Operational Performance (Waiting Time)
+
+GO XL has the highest average VTAT
+
+Premier Sedan has the highest average CTAT
+
+High waiting times strongly correlate with cancellation probability
+
+3️⃣ Financial Impact
+
+Revenue from completed trips: 47.3M
+
+Estimated revenue lost due to cancellations: 17.3M
+
+Reducing cancellations could unlock ~36% additional revenue
+
+4️⃣ Vehicle & Regional Performance
+
+Top revenue vehicle: Auto
+
+Lowest revenue vehicle: GO XL
+
+Certain regions consistently underperform due to high waiting times
+
+5️⃣ Customer Retention Impact 🚨
+
+Customers returning after cancellations: 462
+
+Customers who stopped booking after cancellation: 36,959
+
+Cancellations have a severe negative impact on customer lifetime value.
